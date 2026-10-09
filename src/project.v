@@ -113,6 +113,7 @@ module tt_um_example (
     assign uo_out  = result[7:0];
     assign uio_out = 8'b0;
     assign uio_oe  = 8'b0;
+    assign mem_ready = mem_valid;
 
     // Unused Tiny Tapeout inputs.
     wire unused = ^{ui_in, uio_in, mem_instr};
